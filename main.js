@@ -14,7 +14,7 @@ var roles = {
 module.exports.loop = function() {
     spawner.run(Game.spawns["Spawn1"])
     
-        var towers = Game.rooms["W14N19"].find(FIND_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_TOWER});
+        var towers = Game.rooms["W1N4"].find(FIND_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_TOWER});
         for (let tower of towers) {
             var target = tower.pos.findClosestByRange(FIND_HOSTILE_CREEPS);
             if (target != undefined) {

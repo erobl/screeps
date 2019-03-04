@@ -1,3 +1,10 @@
+var creepPriority = {
+    harvester: 0,
+    upgrader: 1,
+    builder: 2,
+    repairer: 3
+}
+
 module.exports = function() {
     StructureSpawn.prototype.createCustomCreep = function(energy, roleName) {
         var currentEnergy = energy;
